@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Library App</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <div class="container">
+  <nav class="navbar navbar-inverse">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span> 
+    </button>
+    <a class="navbar-brand" href="#">Library App</a>
+   </div>
+   <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+     <li class="active"><a href="/">Home</a></li>
+     <li><a href="/get-book">Books</a></li>
+     <li><a href="/author">Author</a></li> 
+     <li><a href="/addbook">Add Book</a></li> 
+     <li><a href="/register">register</a></li>
+     <li><a href="/login">Login</a></li>  
+    </ul>
+   
+   </div>
+  </nav>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner">
+    <div class="item active">
+     <img src="https://media.istockphoto.com/id/1354989842/photo/banner-with-books-business-and-education-background-back-to-school-concept.jpg?b=1&s=170667a&w=0&k=20&c=sryJ6CANaeQ7vSw9TG_Z6dFb9wGlTdIHDh5_zxkIT5M=" alt="Slide 1">
+    </div>
+    <div class="item">
+     <img src="https://media.istockphoto.com/id/1460007248/photo/library-research-and-row-of-books-on-bookshelf-for-reading-knowledge-and-educational-learning.jpg?b=1&s=170667a&w=0&k=20&c=TngiUK4f7spBY0U1r3xdicmFBK96Bi4JRrF4sNf2ELo=" alt="Slide 2">
+    </div>
+    <div class="item">
+     <img src="https://plus.unsplash.com/premium_photo-1675644727129-9e2fbc03c500?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="Slide 3">
+    </div>
+   </div>
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+   </a>
+  </div>
+  <h1 id="heading">Books</h1>
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Book ID</th>
+     <th>Title</th>
+     <th>Author</th>
+     <th>Category</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>1</td>
+     <td>Harry Potter and the Philosopher's Stone</td>
+     <td>J.K ROWLING</td>
+     <td>fiction</td>
+     </tr>
+     <tr>
+     <td>2</td>
+     <td>The Great Gatsby</td>
+     <td>F. Scott Fitzgerald</td>
+     <td>Classic</td>
+    </tr>
+    <tr>
+    <td>3</td>
+     <td>To Kill a Mockingbird</td>
+     <td>Harper Lee</td>
+     <td>Classic</td>
+    </tr>
+    <tr>
+        <td>4</td>
+         <td>1984</td>
+         <td>George Orwell</td>
+         <td>Dystopian</td>
+        </tr>
+        <tr>
+            <td>5</td>
+             <td>Pride and Prejudice</td>
+             <td>Jane Austen</td>
+             <td>Classic</td>
+            </tr>
+
+    </tbody>
+    </table>     
+     

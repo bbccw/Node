@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Library App</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <div class="container">
+  <nav class="navbar navbar-inverse">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span> 
+    </button>
+    <a class="navbar-brand" href="#">Library App</a>
+   </div>
+   <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+     <li class="active"><a href="/">Home</a></li>
+     <li><a href="#heading">Books</a></li>
+     <li><a href="/author">Author</a></li> 
+     <li><a href="/addbook">Add Book</a></li> 
+     <li><a href="/register">register</a></li>
+     <li><a href="/login">Login</a></li>  
+    </ul>
+   
+   </div>
+  </nav>
+ </div>
+
+  <h1 id="heading">Author</h1>
+
+  <form action="/save-author" method="get">
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" required><br>
+    <br>
+    <label for="publisher">Publisher:</label>
+    <input type="text" id="publisher" name="publisher"><br>
+    <br>
+    <label for="language">Language:</label>
+    <input type="text" id="language" name="language"><br>
+    <br>
+    <label for="publication_year">Publication Year:</label>
+    <input type="text" id="publication_year" name="publication_year"><br>
+
+    <button type="submit">Log In</button>
+  </form>
+
+
+
+
+
+
+
+
+  <!-- <h1 id="heading">Books</h1> -->
+  <!-- <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Book ID</th>
+     <th>Title</th>
+     <th>Author</th>
+     <th>Category</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>1</td>
+     <td>Harry Potter and the Philosopher's Stone</td>
+     <td>J.K ROWLING</td>
+     <td>fiction</td>
+     </tr>
+     <tr>
+     <td>2</td>
+     <td>The Great Gatsby</td>
+     <td>F. Scott Fitzgerald</td>
+     <td>Classic</td>
+    </tr>
+    <tr>
+    <td>3</td>
+     <td>To Kill a Mockingbird</td>
+     <td>Harper Lee</td>
+     <td>Classic</td>
+    </tr>
+    <tr>
+        <td>4</td>
+         <td>1984</td>
+         <td>George Orwell</td>
+         <td>Dystopian</td>
+        </tr>
+        <tr>
+            <td>5</td>
+             <td>Pride and Prejudice</td>
+             <td>Jane Austen</td>
+             <td>Classic</td>
+            </tr>
+   </tbody>
+  </table> -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Author </h1>
+    
+<table class="table-bordered">
+  <thead>
+    <h1>
+
+
+    </h1>
+    <tr>
+      <th>author</th>
+      <th>publisher</th>
+      <th>language</th>
+      <th>publicationyerta</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+
+    <% for(i=0;i<authorDetails.length;i++){%>
+    <tr>
+      <td><%= authorDetails[i].author%></td>
+      <td><%=authorDetails[i].publisher%></td>
+      <td><%= authorDetails[i].language%></td>
+      <td><%=authorDetails[i].publicationyear%></td>
+      <td> <a href="/delete/<%=authorDetails[i]._id%>" type="submit">delete</a> </td>
+      <td> <a href="/editauthor/<%=authorDetails[i]._id%>" type="submit">editauthor</a> </td>
+      
+     
+     
+    </tr>
+    <%}%>
+  
+  </tbody>
+</table>
+
+</body>
+</html>
